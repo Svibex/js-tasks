@@ -32,7 +32,7 @@ function getMultiplicationTable(number) {
                 border+= '_';
                 length--;
             }
-            row = row.replace(/\v/, '  ') + '\n' + border + '\n' + row;
+            row = row.replace(/\|/, ' ').replace(/1/, ' ') + '\n' + border + '\n' + row;
         }
         str = row + '\n' + str;
     }
